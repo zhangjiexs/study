@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="2017-12-26ShopStore:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true" />
+    </properties>
+    <root id="archive" name="ShopStore.war">
+      <element id="artifact" artifact-name="2017-12-26ShopStore:war exploded" />
+    </root>
+  </artifact>
+</component>

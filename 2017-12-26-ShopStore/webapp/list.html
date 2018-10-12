@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>欢迎光临购物车</title>
+    <style type="text/css">
+        h1 {
+            color: #F66;
+        }
+    </style>
+</head>
+
+<body>
+<div align="center">
+    <h1> 欢迎光临购物车 </h1>
+    <form name="form1" method="post" action="edit.jsp" target="">
+        <table width="80%" border="0">
+            <tr>
+                <td width="50%" height="30" align="right"> 请选择您要购买的商品： </td>
+                <td width="50%" height="30" align="left">&nbsp;
+                    <select name="GoodsName">
+                        <option value="电脑" selected> 电脑 </option>
+                        <option value="MP3"> MP3 </option>
+                        <option value="MP4"> MP4 </option>
+                        <option value="MP5"> MP5 </option>
+                        <option value="MP6"> MP6 </option>
+                        <option value="AK-47"> AK-47 </option>
+                        <option value="巴雷特M95"> 巴雷特M95 </option>
+                        <option value="加特林机枪"> 加特林机枪 </option>
+                        <option value="手雷"> 手雷 </option>
+                        <option value=" 鹰击-62巡航导弹"> 鹰击-62巡航导弹 </option>
+                        <option value="美国大兵"> 美国大兵 </option>
+                        <option value="基洛夫空艇"> 基洛夫空艇 </option>
+                        <option value="旺仔qq糖"> 旺仔qq糖 </option>
+                        <option value="品客薯片"> 品客薯片 </option>
+                        <option value="洗衣机"> 洗衣机 </option>
+                        <option value="电视机"> 电视机 </option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td width="50%" height="30" align="right"> 购买数量： </td>
+                <td width="50%" height="30" align="left">&nbsp;
+                    <input type="text" name="GoodsNumber" value="1" size="5"></td>
+            </tr>
+        </table>
+        <p>
+            <input type="submit" name="sub" value="提交">
+            &nbsp;&nbsp;
+            <input type="reset" name="res" value="重购">
+        </p>
+    </form>
+</div>
+</body>
+</html>

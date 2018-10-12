@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style type="text/css">
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body {
+            background-image: url("/images/p4.jpg");
+        }
+
+        .logindata {
+            padding: 6px
+        }
+
+        li > span {
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+            font-size: 18px;
+        }
+
+        li > input {
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        ul {
+            width: 300px;
+            height: 200px;
+            list-style: none;
+            margin-top: 90px;
+            margin-left: 90px;
+        }
+
+        input.submit {
+            width: 157px;
+            height: 32px;
+            margin-left:88px;
+            margin-top: 13px;
+        }
+        input.reset{
+            width: 157px;
+            height: 32px;
+            margin-left: 88px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <form action="/login" method="post">
+        <ul>
+            <li><span style="color: red">用户名:</span><input class="logindata" type="text" name="username" placeholder="请输入用户名"></li>
+            <li><span style="color: red">密 码:</span><input class="logindata" type="password" name="password" placeholder="请输入密码"></li>
+            <li><input class="submit" type="submit" value="确认登录"></li>
+            <li><input class="reset" type="reset" value="取消登录"></li>
+            <span style="color: red">如果您还没有注册，请单击<a href="regist.html">这里</a>注册！</span>
+        </ul>
+    </form>
+</div>
+
+</body>
+</html>

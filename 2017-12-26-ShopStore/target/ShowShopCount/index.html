@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script src="echarts.js" type="text/javascript"></script>
+    <title>尚观大数据商品类型统计</title>
+    <style type="text/css">
+        #main {
+            width: 980px;
+            height: 450px;
+            /*outline: 2px red solid;*/
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main"></div>
+
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+
+    //通过ajax访问服务器的数据
+    var xhr = new XMLHttpRequest();
+    var method = "GET";
+    var url = "/stc";
+    xhr.open(method, url, true);
+    xhr.send();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            //请求发送成功,并且受到服务器的响应数据,这个响应数据的类型是字符串类型的
+            var strJson = xhr.responseText
+            var strObj = eval("(" + strJson + ")")
+            console.log(strObj)
+            myChart.setOption(strObj)
+        }
+    }
+    // 使用刚指定的配置项和数据显示图表。
+</script>
+</body>
+</html>

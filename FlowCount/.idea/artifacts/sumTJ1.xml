@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sumTJ1">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="sumTJ1.jar" />
+  </artifact>
+</component>

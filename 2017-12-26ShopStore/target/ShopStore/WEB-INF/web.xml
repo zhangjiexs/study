@@ -1,0 +1,73 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <servlet>
+    <servlet-name>ProvinceServlet</servlet-name>
+    <servlet-class>com.uplooking.bigdata.web.ProvinceServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+  <servlet-name>UserRegistServlet</servlet-name>
+  <servlet-class>com.uplooking.bigdata.web.UserRegistServlet</servlet-class>
+</servlet>
+
+
+
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.uplooking.bigdata.web.UserLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ShowShopServlet</servlet-name>
+    <servlet-class>com.uplooking.bigdata.web.ShowShopServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>BuyShopServlet</servlet-name>
+    <servlet-class>com.uplooking.bigdata.web.BuyShopServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ShopCountServlet</servlet-name>
+    <servlet-class>com.uplooking.bigdata.web.ShopCountServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>ProvinceServlet</servlet-name>
+    <url-pattern>/getProvinces</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UserRegistServlet</servlet-name>
+    <url-pattern>/regist</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ShowShopServlet</servlet-name>
+    <url-pattern>/showshop</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>BuyShopServlet</servlet-name>
+    <url-pattern>/buyshop</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ShopCountServlet</servlet-name>
+    <url-pattern>/shopcount</url-pattern>
+  </servlet-mapping>
+
+
+
+</web-app>

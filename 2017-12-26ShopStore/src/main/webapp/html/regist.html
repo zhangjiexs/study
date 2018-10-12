@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url("/images/p4.jpg");
+        }
+        .logindata {
+            padding: 6px
+        }
+
+        li > span {
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+            font-size: 18px;
+        }
+
+        li > input {
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        li>select{
+            margin-left: 280px;
+            margin-top: 15px;
+        }
+
+        ul {
+            width: 300px;
+            height: 200px;
+            list-style: none;
+            margin-top: 90px;
+            margin-left: 90px;
+        }
+
+        input.submit {
+            width: 157px;
+            height: 32px;
+            margin-left:88px;
+            margin-top: 13px;
+        }
+        input.reset{
+            width: 157px;
+            height: 32px;
+            margin-left: 88px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="rd">
+    <div class="rdinner">
+        <form action="/regist" method="post">
+            <ul>
+            <li><select id="province" name="provinceName">省份</select></li>
+            <li><span style="color: red">用户名:</span><input class="logindata" type="text" name="username" placeholder="请输入用户名"></li>
+            <li><span style="color: red">密 码:</span><input class="logindata" type="password" name="password" placeholder="请输入密码"></li>
+
+            <li> <input class="submit" type="submit" value="确认注册"></li>
+            <li><input class="reset" type="reset" value="取消注册"></li>
+            </ul>
+        </form>
+    </div>
+
+</div>
+<script type="text/javascript">
+    var xhr = new XMLHttpRequest()
+    xhr.open("get", "/getProvinces", true)
+    xhr.send()
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            var ps = eval("(" + xhr.responseText + ")")
+            var province = document.getElementById("province");
+            for (index in ps) {
+                var opt = document.createElement("option");
+                var text = document.createTextNode(ps[index]);
+                opt.appendChild(text)
+                province.appendChild(opt)
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

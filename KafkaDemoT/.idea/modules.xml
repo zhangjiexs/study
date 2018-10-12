@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KafkaDemoT.iml" filepath="$PROJECT_DIR$/KafkaDemoT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pythin-test/pythin-test.iml" filepath="$PROJECT_DIR$/pythin-test/pythin-test.iml" />
+    </modules>
+  </component>
+</project>
