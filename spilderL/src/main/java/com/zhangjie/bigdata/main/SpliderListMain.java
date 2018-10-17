@@ -35,7 +35,7 @@ public class SpliderListMain {
     private static Jedis jedis= JedisUtil.getJedis();
     public static void main(String[] args) throws InterruptedException {
         BDTBListDownLoad downLoad=new BDTBListDownLoad();
-        page.setUrl("https://tieba.baidu.com/f?kw=美女&pn=0");//连接url
+        page.setUrl("https://tieba.baidu.com/f?kw=斗图&pn=0");//连接url
         //下载页面
         page=downLoad.downLoad(page);
         page=bdtbListParser.parserList(page);

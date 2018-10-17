@@ -2,8 +2,8 @@
 <c3p0-config>
     <default-config>
         <property name="driverClass">com.mysql.jdbc.Driver</property>
-        <property name="jdbcUrl">jdbc:mysql://10.10.10.21/zhangjie?characterEncoding=utf8</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1/zhangjie?characterEncoding=utf8</property>
         <property name="user">root</property>
-        <property name="password">root</property>
+        <property name="password">258025</property>
     </default-config>
 </c3p0-config>

@@ -48,13 +48,13 @@ public class SpliderItemMain {
         page=downLoad.downLoad(page);
         //解析页面
         page= bdtbListParser.parseItemages(page);
-         String sql="insert into images(path) values (?)";
+         String sql="insert into image(path) values (?)";
          for (String path : page.getImages()){
              System.out.println(path);
              queryRunner.execute(sql, path);
              //储存到文件
              String name=path.substring(path.lastIndexOf("/"));
-             FileUtils.copyURLToFile(new URL(path),new File("C:/private-love" + name));
+             FileUtils.copyURLToFile(new URL(path),new File("D:/private-love" + name));
 
          }
 
